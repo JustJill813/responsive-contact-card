@@ -11,11 +11,12 @@
 
 /* Profile picture */
 .profile-pic {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     display: block;
     margin: 0 auto 20px;
+    object-fit: cover;
 }
 
 /* Flex container for boxes */
