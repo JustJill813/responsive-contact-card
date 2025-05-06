@@ -11,8 +11,8 @@
 
 /* Profile picture */
 .profile-pic {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     display: block;
     margin: 0 auto 20px;
@@ -22,14 +22,17 @@
 /* Flex container for boxes */
 .info-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Stack boxes vertically */
+    gap: 10px; /* Adds space between them */
+    align-items: center; /* Center items */
 }
 
 /* Contact box */
 .contact-box, .company-box {
-    width: 45%;
+    width: 90%;
     padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  
+    
     background-color: #fff;
+    text-align: center;
 }
