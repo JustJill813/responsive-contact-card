@@ -1,14 +1,7 @@
-.card-container {
-    display: flex;
-    justify-content: center; /* Centering the card */
-    align-items: center;
-    height: 100vh; /* Full screen height */
-    background-color: #e3e3e3; /* Light background */
-}
-
-/* Styles for the contact card */
-.contact-card {
-    width: 300px;
+/* Styles for the article container */
+.profile-article {
+    width: 400px;
+    margin: 50px auto;
     padding: 20px;
     border: 2px solid #ddd;
     border-radius: 10px;
@@ -16,9 +9,26 @@
     background-color: #f9f9f9;
 }
 
-.photo {
-    width: 100px;
-    height: 100px;
+/* Profile picture */
+.profile-pic {
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    background-color: #ccc;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Flex container for boxes */
+.info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Contact box */
+.contact-box, .company-box {
+    width: 45%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
 }
