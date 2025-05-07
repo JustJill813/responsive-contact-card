@@ -11,8 +11,8 @@
 
 /* Profile picture */
 .profile-pic {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     display: block;
     margin: 0 auto 20px;
@@ -37,4 +37,43 @@
 
 .small-text {
     font-size: 12px;
+}
+
+/* Media query for tablets (500px and up) */
+@media screen and (min-width: 500px) {
+    .info-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .contact-box, .company-box {
+        width: 45%; 
+    }
+}
+
+/* Desktop layout (768px and up) */
+@media screen and (min-width: 768px) {
+    .profile-article {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile-pic {
+        margin-right: 20px; 
+        transform: translateX(-20px); 
+    }
+
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .contact-box, .company-box {
+        width: 100%; 
+    }
 }
